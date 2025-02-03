@@ -1,6 +1,8 @@
 ﻿using Unity.FPS.Game;
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections;
+
 
 namespace Unity.FPS.Gameplay
 {
@@ -104,6 +106,8 @@ namespace Unity.FPS.Gameplay
         public bool IsDead { get; private set; }
         public bool IsCrouching { get; private set; }
 
+        private ParticleSystem particleSystem;
+
         public float RotationMultiplier
         {
             get
@@ -165,13 +169,27 @@ namespace Unity.FPS.Gameplay
 
             m_Health.OnDie += OnDie;
 
+            particleSystem = FindObjectOfType<ParticleSystem>();
             // force the crouch state to false when starting
             SetCrouchingState(false, true);
             UpdateCharacterHeight(true);
+
         }
 
         void Update()
         {
+            // Aperta E desativa Particle
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Debug.Log("Tecla E pressionada");
+                if (particleSystem != null)
+                {
+                    StartCoroutine(TemporarilyDisableParticle(particleSystem));
+                }
+            }
+
+
+
             // check for Y kill
             if (!IsDead && transform.position.y < KillHeight)
             {
@@ -263,6 +281,23 @@ namespace Unity.FPS.Gameplay
                 }
             }
         }
+
+        // ---------------------------------------------------------------------------------------------------------------
+        //      mecaninca de tempo
+
+
+
+        // Coroutine para desativar e reativar a partícula após 3 segundos
+        private IEnumerator TemporarilyDisableParticle(ParticleSystem particle)
+        {
+            particle.Stop();
+            yield return new WaitForSeconds(5f);
+            particle.Play();
+        }
+
+        // ---------------------------------------------------------------------------------------------------------------
+
+
 
         void HandleCharacterMovement()
         {

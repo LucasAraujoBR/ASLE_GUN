@@ -39,6 +39,30 @@
       "version": "1.0.2",
       "source": "builtin"
     },
+    "com.unity.ide.rider@3.0.31": {
+      "name": "com.unity.ide.rider",
+      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.ide.rider",
+      "fingerprint": "7921be93db40ec070fcb01ed82d1c3df1bbdddcd",
+      "editorCompatibility": "2019.2.6f1",
+      "version": "3.0.31",
+      "source": "registry"
+    },
+    "com.unity.ide.visualstudio@2.0.22": {
+      "name": "com.unity.ide.visualstudio",
+      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.ide.visualstudio",
+      "fingerprint": "8140e851d83e922ca2021b04a89519de94ebe38c",
+      "editorCompatibility": "2019.4.25f1",
+      "version": "2.0.22",
+      "source": "registry"
+    },
+    "com.unity.ide.vscode@1.2.4": {
+      "name": "com.unity.ide.vscode",
+      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.ide.vscode",
+      "fingerprint": "eb5de66d4c77580302e328d62de70e3074f61721",
+      "editorCompatibility": "2019.2.0a12",
+      "version": "1.2.4",
+      "source": "registry"
+    },
     "com.unity.learn.iet-framework@4.0.2": {
       "name": "com.unity.learn.iet-framework",
       "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.learn.iet-framework",
@@ -63,10 +87,50 @@
       "version": "6.0.4",
       "source": "registry"
     },
+    "com.unity.recorder@5.1.1": {
+      "name": "com.unity.recorder",
+      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.recorder",
+      "fingerprint": "b7e35dfd1c28b88ef57d70dfd9ceb57dadc56c0d",
+      "editorCompatibility": "2023.1.1f1",
+      "version": "5.1.1",
+      "source": "registry"
+    },
+    "com.unity.render-pipelines.core@17.0.3": {
+      "name": "com.unity.render-pipelines.core",
+      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.render-pipelines.core",
+      "fingerprint": "9e172bcfb19a7723de6866f47995a4d01e058347",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "17.0.3",
+      "source": "builtin"
+    },
     "com.unity.render-pipelines.universal@17.0.3": {
       "name": "com.unity.render-pipelines.universal",
       "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.render-pipelines.universal",
       "fingerprint": "ea1aa119790917481c9333b25d13b0f039233b6d",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "17.0.3",
+      "source": "builtin"
+    },
+    "com.unity.render-pipelines.universal-config@17.0.3": {
+      "name": "com.unity.render-pipelines.universal-config",
+      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.render-pipelines.universal-config",
+      "fingerprint": "fa63c96d3e1af317d84d171cd6c0e0658ab159df",
+      "editorCompatibility": "6000.0.0a1",
+      "version": "17.0.3",
+      "source": "builtin"
+    },
+    "com.unity.rendering.light-transport@1.0.1": {
+      "name": "com.unity.rendering.light-transport",
+      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.rendering.light-transport",
+      "fingerprint": "307bc27a498fc9cd409bbd426c85d8dc7f140bc1",
+      "editorCompatibility": "2023.3.0b1",
+      "version": "1.0.1",
+      "source": "builtin"
+    },
+    "com.unity.shadergraph@17.0.3": {
+      "name": "com.unity.shadergraph",
+      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.shadergraph",
+      "fingerprint": "e6e0df3c9e43d268733e3882298a59923bdf76d3",
       "editorCompatibility": "6000.0.0a1",
       "version": "17.0.3",
       "source": "builtin"
@@ -307,29 +371,45 @@
       "version": "2.0.5",
       "source": "registry"
     },
-    "com.unity.render-pipelines.core@17.0.3": {
-      "name": "com.unity.render-pipelines.core",
-      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.render-pipelines.core",
-      "fingerprint": "9e172bcfb19a7723de6866f47995a4d01e058347",
-      "editorCompatibility": "6000.0.0a1",
-      "version": "17.0.3",
-      "source": "builtin"
+    "com.unity.searcher@4.9.2": {
+      "name": "com.unity.searcher",
+      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.searcher",
+      "fingerprint": "90d011a70418fd5b0f4b8e86df39444d2af228dd",
+      "editorCompatibility": "2019.1.0a1",
+      "version": "4.9.2",
+      "source": "registry"
     },
-    "com.unity.shadergraph@17.0.3": {
-      "name": "com.unity.shadergraph",
-      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.shadergraph",
-      "fingerprint": "e6e0df3c9e43d268733e3882298a59923bdf76d3",
-      "editorCompatibility": "6000.0.0a1",
-      "version": "17.0.3",
-      "source": "builtin"
+    "com.unity.collections@2.5.1": {
+      "name": "com.unity.collections",
+      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.collections",
+      "fingerprint": "56bff8827a7ef6d44fcee4f36e558a74da89c1a0",
+      "editorCompatibility": "2022.3.11f1",
+      "version": "2.5.1",
+      "source": "registry"
     },
-    "com.unity.render-pipelines.universal-config@17.0.3": {
-      "name": "com.unity.render-pipelines.universal-config",
-      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.render-pipelines.universal-config",
-      "fingerprint": "fa63c96d3e1af317d84d171cd6c0e0658ab159df",
-      "editorCompatibility": "6000.0.0a1",
-      "version": "17.0.3",
-      "source": "builtin"
+    "com.unity.mathematics@1.3.2": {
+      "name": "com.unity.mathematics",
+      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.mathematics",
+      "fingerprint": "8017b507cc74bf0a1dd14b18aa860569f807314d",
+      "editorCompatibility": "2021.3.0a1",
+      "version": "1.3.2",
+      "source": "registry"
+    },
+    "com.unity.burst@1.8.18": {
+      "name": "com.unity.burst",
+      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.burst",
+      "fingerprint": "616862665d8c8ffe643d505aebb5de2ee73b0ab0",
+      "editorCompatibility": "2020.3.0a1",
+      "version": "1.8.18",
+      "source": "registry"
+    },
+    "com.unity.bindings.openimageio@1.0.0": {
+      "name": "com.unity.bindings.openimageio",
+      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.bindings.openimageio",
+      "fingerprint": "3229d2aa5c76c70269dc58c79d5864ec84fa4a74",
+      "editorCompatibility": "2023.1.0a1",
+      "version": "1.0.0",
+      "source": "registry"
     },
     "com.unity.settings-manager@2.0.1": {
       "name": "com.unity.settings-manager",
@@ -347,22 +427,6 @@
       "version": "1.0.0",
       "source": "registry"
     },
-    "com.unity.ide.visualstudio@2.0.22": {
-      "name": "com.unity.ide.visualstudio",
-      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.ide.visualstudio",
-      "fingerprint": "8140e851d83e922ca2021b04a89519de94ebe38c",
-      "editorCompatibility": "2019.4.25f1",
-      "version": "2.0.22",
-      "source": "registry"
-    },
-    "com.unity.ide.rider@3.0.31": {
-      "name": "com.unity.ide.rider",
-      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.ide.rider",
-      "fingerprint": "7921be93db40ec070fcb01ed82d1c3df1bbdddcd",
-      "editorCompatibility": "2019.2.6f1",
-      "version": "3.0.31",
-      "source": "registry"
-    },
     "com.unity.performance.profile-analyzer@1.2.2": {
       "name": "com.unity.performance.profile-analyzer",
       "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.performance.profile-analyzer",
@@ -378,46 +442,6 @@
       "editorCompatibility": "2019.3.0a1",
       "version": "1.2.6",
       "source": "registry"
-    },
-    "com.unity.searcher@4.9.2": {
-      "name": "com.unity.searcher",
-      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.searcher",
-      "fingerprint": "90d011a70418fd5b0f4b8e86df39444d2af228dd",
-      "editorCompatibility": "2019.1.0a1",
-      "version": "4.9.2",
-      "source": "registry"
-    },
-    "com.unity.burst@1.8.18": {
-      "name": "com.unity.burst",
-      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.burst",
-      "fingerprint": "616862665d8c8ffe643d505aebb5de2ee73b0ab0",
-      "editorCompatibility": "2020.3.0a1",
-      "version": "1.8.18",
-      "source": "registry"
-    },
-    "com.unity.mathematics@1.3.2": {
-      "name": "com.unity.mathematics",
-      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.mathematics",
-      "fingerprint": "8017b507cc74bf0a1dd14b18aa860569f807314d",
-      "editorCompatibility": "2021.3.0a1",
-      "version": "1.3.2",
-      "source": "registry"
-    },
-    "com.unity.collections@2.5.1": {
-      "name": "com.unity.collections",
-      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.collections",
-      "fingerprint": "56bff8827a7ef6d44fcee4f36e558a74da89c1a0",
-      "editorCompatibility": "2022.3.11f1",
-      "version": "2.5.1",
-      "source": "registry"
-    },
-    "com.unity.rendering.light-transport@1.0.1": {
-      "name": "com.unity.rendering.light-transport",
-      "resolvedPath": "D:\\UNITY\\UNITY_MINI_PROJETOS\\ASLE_GUN\\Library\\PackageCache\\com.unity.rendering.light-transport",
-      "fingerprint": "307bc27a498fc9cd409bbd426c85d8dc7f140bc1",
-      "editorCompatibility": "2023.3.0b1",
-      "version": "1.0.1",
-      "source": "builtin"
     },
     "com.unity.nuget.mono-cecil@1.11.4": {
       "name": "com.unity.nuget.mono-cecil",
