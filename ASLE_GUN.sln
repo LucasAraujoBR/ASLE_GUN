@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fps.Gameplay", "fps.Gamepla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.FPS.Tutorials", "Unity.FPS.Tutorials.csproj", "{46549E3E-2839-FD8C-5DDE-D6338193A0FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{24DB1352-8D3F-AB41-75B7-71D4AC077551}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponentsEditor", "NavMeshComponentsEditor.csproj", "{3B983580-FC68-F9B8-2C28-E52269A2BD6A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fps.Editor", "fps.Editor.csproj", "{FA6BDB5C-AC9C-4B73-0D91-3C1567DDD65E}"
@@ -57,6 +59,10 @@ Global
 		{46549E3E-2839-FD8C-5DDE-D6338193A0FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46549E3E-2839-FD8C-5DDE-D6338193A0FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46549E3E-2839-FD8C-5DDE-D6338193A0FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24DB1352-8D3F-AB41-75B7-71D4AC077551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24DB1352-8D3F-AB41-75B7-71D4AC077551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24DB1352-8D3F-AB41-75B7-71D4AC077551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24DB1352-8D3F-AB41-75B7-71D4AC077551}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3B983580-FC68-F9B8-2C28-E52269A2BD6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3B983580-FC68-F9B8-2C28-E52269A2BD6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B983580-FC68-F9B8-2C28-E52269A2BD6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
