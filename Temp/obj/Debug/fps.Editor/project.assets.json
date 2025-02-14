@@ -1,0 +1,158 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {
+      "fps.AI/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "fps.Game": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/fps.AI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/fps.AI.dll": {}
+        }
+      },
+      "fps.Game/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/fps.Game.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/fps.Game.dll": {}
+        }
+      },
+      "fps.Gameplay/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "fps.Game": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/fps.Gameplay.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/fps.Gameplay.dll": {}
+        }
+      },
+      "fps.UI/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "fps.AI": "1.0.0",
+          "fps.Game": "1.0.0",
+          "fps.Gameplay": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/fps.UI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/fps.UI.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "fps.AI/1.0.0": {
+      "type": "project",
+      "path": "fps.AI.csproj",
+      "msbuildProject": "fps.AI.csproj"
+    },
+    "fps.Game/1.0.0": {
+      "type": "project",
+      "path": "fps.Game.csproj",
+      "msbuildProject": "fps.Game.csproj"
+    },
+    "fps.Gameplay/1.0.0": {
+      "type": "project",
+      "path": "fps.Gameplay.csproj",
+      "msbuildProject": "fps.Gameplay.csproj"
+    },
+    "fps.UI/1.0.0": {
+      "type": "project",
+      "path": "fps.UI.csproj",
+      "msbuildProject": "fps.UI.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": [
+      "fps.AI >= 1.0.0",
+      "fps.Game >= 1.0.0",
+      "fps.Gameplay >= 1.0.0",
+      "fps.UI >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Alberto\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Alberto\\Documents\\faculdade\\testes\\ASLE_GUN\\fps.Editor.csproj",
+      "projectName": "fps.Editor",
+      "projectPath": "C:\\Users\\Alberto\\Documents\\faculdade\\testes\\ASLE_GUN\\fps.Editor.csproj",
+      "packagesPath": "C:\\Users\\Alberto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alberto\\Documents\\faculdade\\testes\\ASLE_GUN\\Temp\\obj\\Debug\\fps.Editor\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Alberto\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {
+            "C:\\Users\\Alberto\\Documents\\faculdade\\testes\\ASLE_GUN\\fps.AI.csproj": {
+              "projectPath": "C:\\Users\\Alberto\\Documents\\faculdade\\testes\\ASLE_GUN\\fps.AI.csproj"
+            },
+            "C:\\Users\\Alberto\\Documents\\faculdade\\testes\\ASLE_GUN\\fps.Game.csproj": {
+              "projectPath": "C:\\Users\\Alberto\\Documents\\faculdade\\testes\\ASLE_GUN\\fps.Game.csproj"
+            },
+            "C:\\Users\\Alberto\\Documents\\faculdade\\testes\\ASLE_GUN\\fps.Gameplay.csproj": {
+              "projectPath": "C:\\Users\\Alberto\\Documents\\faculdade\\testes\\ASLE_GUN\\fps.Gameplay.csproj"
+            },
+            "C:\\Users\\Alberto\\Documents\\faculdade\\testes\\ASLE_GUN\\fps.UI.csproj": {
+              "projectPath": "C:\\Users\\Alberto\\Documents\\faculdade\\testes\\ASLE_GUN\\fps.UI.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
