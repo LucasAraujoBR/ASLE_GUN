@@ -207,7 +207,7 @@ namespace Unity.FPS.Game
             nextShell.gameObject.SetActive(true);
             nextShell.transform.SetParent(null);
             nextShell.collisionDetectionMode = CollisionDetectionMode.Continuous;
-            nextShell.AddForce(nextShell.transform.up * ShellCasingEjectionForce, ForceMode.Impulse);
+            // nextShell.AddForce(nextShell.transform.up * ShellCasingEjectionForce, ForceMode.Impulse);
 
             m_PhysicalAmmoPool.Enqueue(nextShell);
         }
@@ -447,8 +447,9 @@ namespace Unity.FPS.Game
             for (int i = 0; i < bulletsPerShotFinal; i++)
             {
                 Vector3 shotDirection = GetShotDirectionWithinSpread(WeaponMuzzle);
-                ProjectileBase newProjectile = Instantiate(ProjectilePrefab, WeaponMuzzle.position,
-                    Quaternion.LookRotation(shotDirection));
+ProjectileBase newProjectile = Instantiate(ProjectilePrefab, 
+    WeaponMuzzle.position + shotDirection * 0.5f,  // 🔹 Instancia um pouco à frente
+    Quaternion.LookRotation(shotDirection));
                 newProjectile.Shoot(this);
             }
 
