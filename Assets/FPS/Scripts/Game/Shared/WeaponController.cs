@@ -28,7 +28,8 @@ namespace Unity.FPS.Game
     [RequireComponent(typeof(AudioSource))]
     public class WeaponController : MonoBehaviour
     {
-        [Header("Information")] [Tooltip("The name that will be displayed in the UI for this weapon")]
+        [Header("Information")]
+        [Tooltip("The name that will be displayed in the UI for this weapon")]
         public string WeaponName;
 
         [Tooltip("The image that will be displayed in the UI for this weapon")]
@@ -41,16 +42,18 @@ namespace Unity.FPS.Game
         public CrosshairData CrosshairDataTargetInSight;
 
         [Header("Internal References")]
-        [Tooltip("The root object for the weapon, this is what will be deactivated when the weapon isn't active")]
+        [Tooltip("The root object for the weapon, this is what will be deac tivated when the weapon isn't active")]
         public GameObject WeaponRoot;
 
         [Tooltip("Tip of the weapon, where the projectiles are shot")]
         public Transform WeaponMuzzle;
 
-        [Header("Shoot Parameters")] [Tooltip("The type of weapon wil affect how it shoots")]
+        [Header("Shoot Parameters")]
+        [Tooltip("The type of weapon wil affect how it shoots")]
         public WeaponShootType ShootType;
 
-        [Tooltip("The projectile prefab")] public ProjectileBase ProjectilePrefab;
+        [Tooltip("The projectile prefab")] public ProjectileBase DecreaseTimeProjectilePrefab;
+        [Tooltip("The projectile prefab")] public ProjectileBase IncreaseTimeProjectilePrefab;
 
         [Tooltip("Minimum duration between two shots")]
         public float DelayBetweenShots = 0.5f;
@@ -61,10 +64,12 @@ namespace Unity.FPS.Game
         [Tooltip("Amount of bullets per shot")]
         public int BulletsPerShot = 1;
 
-        [Tooltip("Force that will push back the weapon after each shot")] [Range(0f, 2f)]
+        [Tooltip("Force that will push back the weapon after each shot")]
+        [Range(0f, 2f)]
         public float RecoilForce = 1;
 
-        [Tooltip("Ratio of the default FOV that this weapon applies while aiming")] [Range(0f, 1f)]
+        [Tooltip("Ratio of the default FOV that this weapon applies while aiming")]
+        [Range(0f, 1f)]
         public float AimZoomRatio = 1f;
 
         [Tooltip("Translation to apply to weapon arm when aiming with this weapon")]
@@ -88,6 +93,8 @@ namespace Unity.FPS.Game
         [Tooltip("Amount of ammo reloaded per second")]
         public float AmmoReloadRate = 1f;
 
+        public string timeAction = "DECREASE";
+
         [Tooltip("Delay after the last shot before starting to reload")]
         public float AmmoReloadDelay = 2f;
 
@@ -107,7 +114,7 @@ namespace Unity.FPS.Game
         [Tooltip("Additional ammo used when charge reaches its maximum")]
         public float AmmoUsageRateWhileCharging = 1f;
 
-        [Header("Audio & Visual")] 
+        [Header("Audio & Visual")]
         [Tooltip("Optional weapon animator for OnShoot animations")]
         public Animator WeaponAnimator;
 
@@ -207,7 +214,7 @@ namespace Unity.FPS.Game
             nextShell.gameObject.SetActive(true);
             nextShell.transform.SetParent(null);
             nextShell.collisionDetectionMode = CollisionDetectionMode.Continuous;
-            nextShell.AddForce(nextShell.transform.up * ShellCasingEjectionForce, ForceMode.Impulse);
+            // nextShell.AddForce(nextShell.transform.up * ShellCasingEjectionForce, ForceMode.Impulse);
 
             m_PhysicalAmmoPool.Enqueue(nextShell);
         }
@@ -244,6 +251,12 @@ namespace Unity.FPS.Game
             {
                 MuzzleWorldVelocity = (WeaponMuzzle.position - m_LastMuzzlePosition) / Time.deltaTime;
                 m_LastMuzzlePosition = WeaponMuzzle.position;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+
+                timeAction = timeAction == "DECREASE" ? "INCREASE" : "DECREASE";
             }
         }
 
@@ -447,7 +460,11 @@ namespace Unity.FPS.Game
             for (int i = 0; i < bulletsPerShotFinal; i++)
             {
                 Vector3 shotDirection = GetShotDirectionWithinSpread(WeaponMuzzle);
-                ProjectileBase newProjectile = Instantiate(ProjectilePrefab, WeaponMuzzle.position,
+
+
+
+                ProjectileBase newProjectile = Instantiate(timeAction == "DECREASE" ? DecreaseTimeProjectilePrefab : IncreaseTimeProjectilePrefab,
+                    WeaponMuzzle.position + shotDirection * 0.5f,  // 🔹 Instancia um pouco à frente
                     Quaternion.LookRotation(shotDirection));
                 newProjectile.Shoot(this);
             }
