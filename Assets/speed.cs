@@ -1,14 +1,9 @@
 using UnityEngine;
 using System.Collections;
 
-public class TrapController : MonoBehaviour
+public class TrapSpeed : MonoBehaviour
 {
     private Animator animator;
-
-
-    public float minAnimationSpeed = 0.5f;
-    public float maxAnimationSpeed = 5f;
-
 
     void Start()
     {

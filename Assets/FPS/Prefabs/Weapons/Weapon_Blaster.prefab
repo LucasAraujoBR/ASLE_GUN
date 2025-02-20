@@ -188,11 +188,13 @@ MonoBehaviour:
   CrosshairDataTargetInSight:
     CrosshairSprite: {fileID: 21300000, guid: e881aa18189b12f4e915fc5b14ddc421, type: 3}
     CrosshairSize: 40
-    CrosshairColor: {r: 1, g: 0, b: 0, a: 1}
+    CrosshairColor: {r: 0, g: 0, b: 0, a: 1}
   WeaponRoot: {fileID: 1505447205160222267}
   WeaponMuzzle: {fileID: 8334323006752503713}
   ShootType: 1
-  ProjectilePrefab: {fileID: 8924682559891268397, guid: 3c6b27d949cdda749892906e1f1d1b27,
+  DecreaseTimeProjectilePrefab: {fileID: 8924682559891268397, guid: 3c6b27d949cdda749892906e1f1d1b27,
+    type: 3}
+  IncreaseTimeProjectilePrefab: {fileID: 8924682559891268397, guid: ec753d54f333bb944b8b04884ad63828,
     type: 3}
   DelayBetweenShots: 1
   BulletSpreadAngle: 0

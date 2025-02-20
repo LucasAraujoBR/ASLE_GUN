@@ -7180,8 +7180,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1797054695940572262, guid: 0b17c7f38812645138e287963a670f79,
         type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797054695940572262, guid: 0b17c7f38812645138e287963a670f79,
+        type: 3}
       propertyPath: m_TagString
       value: TimeObstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2789723995704678138, guid: 0b17c7f38812645138e287963a670f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2789723995704678138, guid: 0b17c7f38812645138e287963a670f79,
         type: 3}
@@ -7245,8 +7255,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4042295641868332708, guid: 0b17c7f38812645138e287963a670f79,
         type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4042295641868332708, guid: 0b17c7f38812645138e287963a670f79,
+        type: 3}
       propertyPath: m_TagString
       value: TimeObstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6434260611417924139, guid: 0b17c7f38812645138e287963a670f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6434260611417924139, guid: 0b17c7f38812645138e287963a670f79,
         type: 3}
@@ -36109,6 +36129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579e327a9ac93de498cd52370e0a9656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minAnimationSpeed: 0.5
+  maxAnimationSpeed: 5
 --- !u!1001 &999276573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77415,6 +77437,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8303093099919959869, guid: 761cdc9e4e883334cbdcea062d0befa7,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 6967
       objectReference: {fileID: 0}
     - target: {fileID: 8746678193447392789, guid: 761cdc9e4e883334cbdcea062d0befa7,
         type: 3}
